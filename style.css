@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #181817;
+  color: rgba(252, 252, 252, 0.848);
+}
+
+.portfolio {
+  font-size: 38px;
+  text-align: center;
+}
+
+.portfolio-subtitulo {
+  font-size: 24px;
+  text-align: center;
+}
+/* //////////////Contenedor principal y contenedor de la card///////////// */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 404px;
+  margin: 0px 40px 45px 40px;
+  background-color: #2a2a29;
+}
+
+/*                     contenido de la card */
+.imagen {
+  width: 398px;
+  height: 255px;
+}
+
+.titulo {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.descripcion {
+  font-size: 18px;
+  padding: 0 22px;
+  font-weight: 400;
+}
+
+.contenedor-vermas {
+  background-color: #2a2a29;
+  margin-bottom: 50px;
+}
+.ver {
+  color: #51aff3;
+  font-weight: 700;
+  padding-left: 75%;
+}
+
+/* Media queries 960px */
+
+@media (min-width: 960px) {
+  .content {
+    display: grid;
+    height: 970px;
+    grid-template-columns: auto auto auto;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 0px 55px 0px 55px;
+  }
+}
+
+@media (min-width: 960px) {
+  .card {
+    width: 270px;
+    height: 950px;
+    margin: 0px;
+    background-color: #2a2a29;
+  }
+}
+
+@media (min-width: 960px) {
+  .imagen {
+    width: 270px;
+    height: 250px;
+  }
+}
+
+/* /////////////////////////////// a partir de 1200px ////////// */
+
+@media (min-width: 1200px) {
+  .card {
+    width: 100%;
+    height: 650px;
+    margin: 0px;
+    background-color: #2a2a29;
+  }
+}
+
+@media (min-width: 1200px) {
+  .imagen {
+    width: 100%;
+    height: auto;
+  }
+}
