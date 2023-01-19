@@ -27,7 +27,7 @@ function cargarResults(results) {
 
 function main() {
   fetch(
-    "https://cdn.contentful.com/spaces/o191ztp8knl5/environments/master/entries?access_token=f-29-PMxDe-lbvmPiFoddeoxRea891nfsNqGf_lH-5Y"
+    "https://cdn.contentful.com/spaces/o191ztp8knl5/environments/master/entries?access_token=f-29-PMxDe-lbvmPiFoddeoxRea891nfsNqGf_lH-5Y&content_type=work"
   )
     .then((respuesta) => respuesta.json())
     .then((datos) => {
